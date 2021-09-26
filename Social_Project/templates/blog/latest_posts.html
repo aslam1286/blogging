@@ -1,0 +1,18 @@
+
+{% extends 'blog/base.html' %}
+
+{% block title %}
+    Latest Posts
+{% endblock %}
+
+{% block body %}
+   {% for post in post_list %}
+       <ol>
+          <li>Posted by - {{ post.author }}</li><!-- 07:37, Tue 20 Apr 2021 -->
+           <li>Posted date - {{ post.date_posted|date:'h : i,D d M Y' }}</li>
+           <li>Title of post- {{ post.title }}</li>
+            <li>Content of post - {{ post.content }}</li>
+       </ol>
+       <hr>
+    {% endfor %}
+{% endblock %}

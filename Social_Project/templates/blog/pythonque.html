@@ -1,0 +1,762 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block title %}
+   Home Blog
+{% endblock %}
+{% block body %}
+<body style="background-color:cornsilk">
+<div class="container" >         
+
+  <div id="content" role="main" style="margin-top:-20px !important;" class="m-t-lg m-b-xl m-r-md m-l-md">
+  
+      
+              
+  <article class="post-medium post-6768 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-interview-questions">
+  
+      <div class="row">
+                      <div class="col-lg-12">
+                  
+                  <div class="post-content">
+                                              <h2 class="entry-title text-center text-white" style="background-color: maroon;">Python Interview Questions</h2><hr/>
+  <h3>Why Python programming language?</h3>
+  <ul>
+  <li>Every programming language has its scope. Different programming languages used for different types of application development.</li>
+  <li>Python script analyzes the data effectively using its pre-defined functionality than other programming codes.</li>
+  <li>Python can be used in web development, Gaming development, Embedded System applications and many more.</li>
+  </ul>
+  <hr/>
+  <h3>What is the difference between Script and Program?</h3>
+  <ul>
+  <li>A Program (Process) is a set of instructions.</li>
+  <li>A script is a sub program or sub process.</li>
+  </ul>
+  <hr/>
+  <h3>What is a Compiler?</h3>
+  <ul>
+  <li>A translator that converts the source code (high level instructions set) into either machine code or interpreter understandable code.</li>
+  </ul>
+  <hr/>
+  <h3>Can we modify a list?</h3>
+  <p>Yes, List is mutable collection object. Hence we can modify the object by adding or removing the elements once it has been created.</p>
+  <hr/>
+  <h3>Can we modify a tuple?</h3>
+  <ul>
+  <li>No, tuple is immutable object.</li>
+  <li>Immutable objects are constants hence we cannot modify once it has created.</li>
+  </ul>
+  <hr/>
+  <h3>Can we modify a tuple element?</h3>
+  <ul>
+  <li>Tuple elements can be Mutable or Immutable.</li>
+  <li>If the element is Mutable like List, we can modify.</li>
+  <li>If the element is immutable like int, float , string and Tuple cannot be modified.</li>
+  </ul>
+  <hr/>
+  <h3>Can we store a List inside Tuple?</h3>
+  <ul>
+  <li>Yes allowed.</li>
+  <li>Tuple can able to store both Mutable and Immutable objects.</li>
+  <li>List is Mutable hence that cannot be stored as an element.</li>
+  </ul>
+  <hr/>
+  <h3>Differentiate Compilation and Interpretation?</h3>
+  <ul>
+  <li>Compiler translates the source code into machine code all at once only if all instructions are syntactically correct.</li>
+  <li>Interpreter translates the code line by line and generates the output for translated instruction instantly.</li>
+  </ul>
+  <hr/>
+  <h3>What is the return type of input() function?</h3>
+  <ul>
+  <li>Input() function reads the end user input in the program.</li>
+  <li>It returns the input values in String format.</li>
+  </ul>
+  <hr/>
+  <h3> How can we process the input values in the application?</h3>
+  <ul>
+  <li>We can convert the String type elements into corresponding type using pre-defined data conversion methods such as int() , float() ….</li>
+  </ul>
+  <hr/>
+  <h3>What is the use of ‘pass’ keyword?</h3>
+  <ul>
+  <li>‘pass’ keyword is used to define empty blocks, functions and classes.</li>
+  </ul>
+  <hr/>
+  <h3>What is a break statement?</h3>
+  <p>“Break” is used to terminate the flow of a loop.</p>
+  <hr/>
+  <h3>Differentiate Break and Continue?</h3>
+  <p>“Break” is used to terminate the loop completely where as “Continue” is used to end the current iteration and continue with remaining iterations execution.</p>
+  <hr/>
+  <h3>Can we store a Tuple inside List?</h3>
+  <ul>
+  <li>List allows both Mutable and Immutable objects as elements.</li>
+  <li>Tuple is Immutable and it can be stored as an element.</li>
+  </ul>
+  <hr/>
+  <h3>Can we store a set inside another set?</h3>
+  <p>No.</p>
+  <ul>
+  <li>Set is Mutable.</li>
+  <li>Set elements must be immutable.</li>
+  </ul>
+  <hr/>
+  <h3>Can we store a Tuple as a key in a dictionary?</h3>
+  <ul>
+  <li>Yes allowed, a tuple is Immutable and Dictionary keys are Immutable.</li>
+  </ul>
+  <hr/>
+  <h3>Does python contain a char data type?</h3>
+  <ul>
+  <li>No, python supports only string type.</li>
+  <li>A character in python is a String of length 1.</li>
+  </ul>
+  <hr/>
+  <h3>What is the use of chr() function in Python?</h3>
+  <ul>
+  <li>chr() function returns the corresponding symbol of specified integer value.</li>
+  <li>For example  chr(97) is ‘a’</li>
+  </ul>
+  <hr/>
+  <h3>How can we represent a String in python?</h3>
+  <ul>
+  <li>String is a one dimensional character array.</li>
+  <li>We can represent Strings either by using single quotes or double quotes.</li>
+  </ul>
+  <hr/>
+  <h3>Can we add String and integer directly using + operator?</h3>
+  <ul>
+  <li>No, we cannot concatenate String and Integer directly. We need to convert integer into string to merge.</li>
+  <li>string = string + str(int)</li>
+  </ul>
+  <hr/>
+  <h3>What is the use of str( ) function?</h3>
+  <p>Converts specified input value(int or float..) into String type.</p>
+  <p>str(10) à “10”</p>
+  <hr/>
+  <h3>Can we convert a character into integer using int() function?</h3>
+  <ul>
+  <li>No, int() function is used to convert the specified input(convertible integer) into int type.</li>
+  </ul>
+  <p><strong>For example,</strong></p>
+  <p>int(“12”) à 12</p>
+  <p>int(34.56) à 34</p>
+  <p>int(“abc”) à Error :</p>
+  <p>&nbsp;</p>
+  <hr/>
+  <h3>What is the use of ord( ) function?</h3>
+  <ul>
+  <li>ord( ) function is used to convert the specified symbol(A string of length 1) into integer.</li>
+  </ul>
+  <hr/>
+  <h3> How to convert a string into float ?</h3>
+  <ul>
+  <li>float() function is pre-defined and it can be used to convert String to float(if the string contains convertible float value) else it raises exception.</li>
+  </ul>
+  <hr/>
+  <h3>What is a function?</h3>
+  <ul>
+  <li>Set of instructions having identity. A function takes input, process input and generates output.</li>
+  </ul>
+  <hr/>
+  <h3>Differentiate Function and Method?</h3>
+  <ul>
+  <li>Both are same.</li>
+  <li>We call it as a Function in Procedure oriented programming and Method in Object</li>
+  <li>Oriented programming.</li>
+  </ul>
+  <hr/>
+  <h3>What is the Keyword argument Function?</h3>
+  <ul>
+  <li>Calling the function by passing values along with argument names.</li>
+  <li>Argument names working like keys.</li>
+  <li>While using keys(argument identities), no need to follow the order of arguments to pass values.</li>
+  </ul>
+  <hr/>
+  <h3>What is the use of variable arguments Function?</h3>
+  <ul>
+  <li>Variable argument functions can able to collect different length of parameter values.</li>
+  <li>A pointer type variable collects all these values.</li>
+  </ul>
+  <hr/>
+  <h3>What is the Default argument function?</h3>
+  <ul>
+  <li>Assigning values directly to an argument in the function definition.</li>
+  <li>Passing parameter values to these arguments is optional.</li>
+  <li>We can replace these values if required.</li>
+  </ul>
+  <hr/>
+  <h3>Can we place a non default argument followed by default argument?</h3>
+  <ul>
+  <li>No, it is not possible to place default argument preceded by non default argument.</li>
+  </ul>
+  <hr/>
+  <h3>What is class?</h3>
+  <ul>
+  <li>The complete representation of real world entity(object) is called class.</li>
+  <li>It is a blue print or model of object.</li>
+  <li>A collection of similar objects can be defined using class template.</li>
+  </ul>
+  <hr/>
+  <h3>What is object?</h3>
+  <ul>
+  <li>A real world entity with an identity, properties and functionality.</li>
+  <li>Identity is unique and it is used to access the object.</li>
+  <li>Properties represent information of Object.</li>
+  <li>Functionality describes capability of object.</li>
+  </ul>
+  <hr/>
+  <h3>Describe self reference variable?</h3>
+  <ul>
+  <li>The most recommended variable used to define object level methods.</li>
+  <li>It must be placed as first argument in the method definition.</li>
+  <li>It holds object address and it is used to invoke object level methods.</li>
+  </ul>
+  <hr/>
+  <h3>What is the need of encapsulation?</h3>
+  <ul>
+  <li>Protecting the object members(data and code) is the concept of encapsulation.</li>
+  <li>We can implement Encapsulation in object oriented programming using ‘class’.</li>
+  </ul>
+  <hr/>
+  <h3>What is inheritance?</h3>
+  <ul>
+  <li>Defining an object by extending(updating) the functionality of existing object.</li>
+  <li>It includes, accessing existing object functionality, adding new functionality and updating existing functionality if required.</li>
+  </ul>
+  <hr/>
+  <h3>What is the advantage of inheritance?</h3>
+  <ul>
+  <li>The main advantage of inheritance is code re-usability.</li>
+  </ul>
+  <hr/>
+  <h3>How interpreters differ from the compiler ?</h3>
+  <ul>
+  <li>A compiler translates the source code all at once whereas Interpreter translates the code line by line.</li>
+  </ul>
+  <hr/>
+  <h3>Why python is interpreted programming language?</h3>
+  <ul>
+  <li>Python code need not be compiled.</li>
+  <li>Python interpreter is able to run the source code directly and generate output.</li>
+  </ul>
+  <hr/>
+  <h3>Describe the local variable?</h3>
+  <ul>
+  <li>Definition of a variable inside a block or function.</li>
+  <li>It can be accessed only within the block in which it has defined.</li>
+  </ul>
+  <hr/>
+  <h3>Is python an object-oriented programming language?</h3>
+  <ul>
+  <li>Python is fully object-oriented programming language. Every data element in python is an object. It doesn’t support primitive types</li>
+  </ul>
+  <hr/>
+  <h3>What is the global variable in Python?</h3>
+  <ul>
+  <li>Defining variable outside to all the functions referred to as Global variable.</li>
+  <li>The scope of the global variable is throughout the program.</li>
+  </ul>
+  <hr/>
+  <h3>What are the advantages of functions?</h3>
+  <ul>
+  <li>Code re-usability</li>
+  <li>Easy implementation of application</li>
+  </ul>
+  <hr/>
+  <h3>What is the use of a global keyword?</h3>
+  <ul>
+  <li>The keyword is used to create, access and process the global variables information from the function.</li>
+  </ul>
+  <hr/>
+  <h3>Does python support data types?</h3>
+  <ul>
+  <li>Python is dynamic programming language.</li>
+  <li>It stores the information in the form of object.</li>
+  <li>It doesn’t store primitive data. Primitive data type size is fixed but not object size.</li>
+  <li>If we able to store the data of any size is called dynamic language.</li>
+  </ul>
+  <hr/>
+  <h3>What is method overriding?</h3>
+  <ul>
+  <li>Defining a method in the child class with the same name and same signature of parent class method.</li>
+  <li>Overriding can be implemented only in Parent-Child relation.</li>
+  </ul>
+  <hr/>
+  <h3>What is the need of method overriding?</h3>
+  <ul>
+  <li>The main advantage of method overriding (re-writing) is to update Parent object functionality in the child class if it is not sufficient to Child class.</li>
+  </ul>
+  <hr/>
+  <h3>Define abstraction?</h3>
+  <ul>
+  <li>Abstraction is the concept of hiding unnecessary details of object and showing essential features to communicate.</li>
+  </ul>
+  <hr/>
+  <h3>What is the object reference variable?</h3>
+  <ul>
+  <li>A user variable that holds the address of Object is called Object reference variable.</li>
+  </ul>
+  <hr/>
+  <h3>How to initialize the Parent object in the process of Child object creation?</h3>
+  <ul>
+  <li>By invoking the Parent class constructor(__init__) from the Child class constructor in Child object creation process.</li>
+  </ul>
+  <hr/>
+  <h3>What is the use of super() method?</h3>
+  <ul>
+  <li>super() method is used to access Parent class functionality from Child class.</li>
+  <li>Super() method is used to access the any super class functionality by specifying its Child reference.</li>
+  </ul>
+  <hr/>
+  <h3>Does python support Hybrid inheritance?</h3>
+  <ul>
+  <li>Yes, python supports Hybrid inheritance. It is also called Diamond inheritance.</li>
+  </ul>
+  <hr/>
+  <h3>What is the difference between match() and search() functions in Regular expressions?</h3>
+  <ul>
+  <li>match() function is used to check whether the string starts with specified pattern or not.</li>
+  <li>search() function is used to find whether the string contains specified pattern or not.</li>
+  </ul>
+  <hr/>
+  <h3>Define polymorphism?</h3>
+  <ul>
+  <li>Defining an object(class) that shows different behavior(functionality) with the same identity.</li>
+  </ul>
+  <hr/>
+  <h3>What is method overloading technique?</h3>
+  <ul>
+  <li>Defining method more than once with the same name and different signature.</li>
+  <li>We can implement method overloading inside a class.</li>
+  </ul>
+  <hr/>
+  <h3>How can we achieve method overloading in python?</h3>
+  <ul>
+  <li>It is not possible to implement method overloading in python programming. Overloading is called compile time binding. Python is interpreted programming language.</li>
+  </ul>
+  <hr/>
+  <h3>What is Constructor?</h3>
+  <ul>
+  <li>A special method invokes automatically in object creation process.</li>
+  </ul>
+  <hr/>
+  <h3>How to access the Overridden method of Parent class from Child?</h3>
+  <ul>
+  <li>Using super() method, we can access Parent class functionality from Child class area.</li>
+  </ul>
+  <hr/>
+  <h3>How to access Grandparent object level functionality from Child?</h3>
+  <ul>
+  <li>By invoking super(Parent, object_ref).</li>
+  </ul>
+  <hr/>
+  <h3>What is runtime polymorphism?</h3>
+  <ul>
+  <li>It is also called dynamic binding. It is method overriding technique.</li>
+  <li>Writing the method in the Child class with the same name and same signature with Parent class method.</li>
+  </ul>
+  <hr/>
+  <h3>What is ‘self’ ?</h3>
+  <ul>
+  <li>The most recommended variable to define object level methods and constructors.</li>
+  <li>‘self’ holds object address hence it is also called ‘Reference variable’.</li>
+  </ul>
+  <hr/>
+  <h3>Can I access ‘self’ anywhere in the program?</h3>
+  <ul>
+  <li>‘self’ is an argument of function or constructor</li>
+  <li>‘arguments’ are working like local variables.</li>
+  <li>Local variables can be accessed only within the function.</li>
+  </ul>
+  <hr/>
+  <h3>What is Exception?</h3>
+  <ul>
+  <li>It is a run time error.</li>
+  <li>Exception either pre-defined class or user defined class.</li>
+  </ul>
+  <hr/>
+  <h3>Why handling exceptions?</h3>
+  <ul>
+  <li>The exception causes abnormal termination of Program execution.</li>
+  <li>The exception provides informal information to End-user.</li>
+  </ul>
+  <hr/>
+  <h3>How to handle exceptions in Python?</h3>
+  <ul>
+  <li>Using try-except blocks, we can handle exceptions in python.</li>
+  </ul>
+  <hr/>
+  <h3>What is a try ?</h3>
+  <ul>
+  <li>It is a keyword</li>
+  <li>It is a block of instructions.</li>
+  <li>Doubtful code that raises exceptions must be placed inside the try block in exception handling.</li>
+  </ul>
+  <hr/>
+  <h3>What is exception object?</h3>
+<ul>
+<li>If exception has raised with in the logic, an object will be created with the complete information of error to be handled is called “Exception object”.</li>
+</ul>
+<hr/>
+<h3>Describe except block?</h3>
+<ul>
+<li>Except-block contains exception handling logic.</li>
+<li>Except block executes only if an exception has risen in try block.</li>
+</ul>
+<hr/>
+<h3>What is the need of finally block?</h3>
+<ul>
+<li>Finally, block contains resource releasing logic. It is recommended to shutdown(release) the resources properly after use in the application.</li>
+</ul>
+<hr/>
+<h3>What is the main advantage of the except block?</h3>
+<ul>
+<li>It avoids abnormal termination of the program in case of exception</li>
+<li>It is used to provide formal information to End-user.</li>
+</ul>
+<hr/>
+<h3>When we use try with finally block?</h3>
+<ul>
+<li>We can use try with finally block without except block definition but the program terminates abnormally in case of exception.</li>
+</ul>
+<hr/>
+<h3>How to create a user exception class?</h3>
+<ul>
+<li>User exceptions can be created by extending the functionality of the pre-defined exception class.</li>
+</ul>
+<hr/>
+<h3>What is the use of a raise keyword?</h3>
+<ul>
+<li>Pre-defined exception objects will be raised automatically by the python interpreter when an error occurs.</li>
+<li>User-defined exception objects must be raised manually in the application using the ‘raise’ keyword.</li>
+</ul>
+<hr/>
+<h3>What is the use of try with multi except for blocks?</h3>
+<ul>
+<li>Used to handle different types of exceptions occur in different lines of code in try block. Only one except block executes among multiple blocks we defined.</li>
+</ul>
+<hr/>
+<h3>What is Multitasking?</h3>
+<ul>
+<li>Performing more than one task simultaneously in the application.</li>
+</ul>
+<hr/>
+<h3>What is the advantage of Multitasking?</h3>
+<ul>
+<li>The optimum utilization of the CPU(process) resource and complete the tasks with parallel processing.</li>
+</ul>
+<hr/>
+<h3>Differentiate Multi-tasking and Multithreading?</h3>
+<ul>
+<li>The task is a program or process</li>
+<li>Thread is a subprogram or subprocess.</li>
+<li>In multitasking, n tasks execute in n process spaces whereas in multithreading, n tasks execute in single process space.</li>
+</ul>
+<hr/>
+<h3>How to create a thread?</h3>
+<ul>
+<li>By extending the functionality of the Pre-defined Thread class. Thread class belongs to a module called ‘threading’.</li>
+</ul>
+<hr/>
+<h3>What is the use of a run() method?</h3>
+<ul>
+<li>It is the pre-defined method available in Thread class.</li>
+<li>It must be overridden into a user-defined Thread class.</li>
+<li>It is used to place the thread logic that will execute parallel and independent from thread space.</li>
+</ul>
+<hr/>
+<h3>Can we call a run() method directly?</h3>
+<ul>
+<li>Yes, but the logic executes from the current thread space.</li>
+</ul>
+<hr/>
+<h3>Why do we need to call the start() method to start a thread?</h3>
+<ul>
+<li>start() method provides pre-defined logic to allocate the thread space from which run() method logic executes independently.</li>
+</ul>
+<hr/>
+<h3>What is the use of sleep() method?</h3>
+<ul>
+<li>sleep() method is used to cease(stops) thread execution for the specified number of milliseconds.</li>
+</ul>
+<hr/>
+<h3>What is the difference between sleep() and join() methods?</h3>
+<ul>
+<li>sleep() method stops the thread for specified number seconds.</li>
+<li>join() method stops the thread until joined thread execution completes.</li>
+</ul>
+<hr/>
+<h3>What is synchronization?</h3>
+<ul>
+<li>Allowing threads sequentially when multiple threads are trying to access a resource.</li>
+</ul>
+<hr/>
+<h3>When do we use to try with multiple except blocks?</h3>
+<ul>
+<li>A transaction(task) is a collection of steps and in chance of getting more than exception in that transaction.</li>
+</ul>
+<hr/>
+<h3>When constructor gets execute?</h3>
+<ul>
+<li>Constructor executes when we create object for a class.</li>
+</ul>
+<hr/>
+<h3>What is the use of id() method?</h3>
+<ul>
+<li>id() method is pre-defined and it returns object id of specified object address.</li>
+</ul>
+<hr/>
+<h3>What is the need of arguments constructor in a class?</h3>
+<ul>
+<li>Arguments constructor is used to initialize object level variable in object creation process.</li>
+</ul>
+<hr/>
+<h3>How to define private variables in python?</h3>
+<ul>
+<li>Defining a variable preceded by double underscore(_ _) is called Private variable.</li>
+</ul>
+<hr/>
+<h3>Where to access private members of python class?</h3>
+<ul>
+<li>We can access private variables only within the class in which they have defined.</li>
+</ul>
+<hr/>
+<h3>What is a protected variable in python and how to define it?</h3>
+<ul>
+<li>Defining a variable preceded by a single underscore(_) is called a protected variable. We can access these variables only in Parent-Child relation.</li>
+</ul>
+<hr/>
+<h3>Why we use constructor?</h3>
+<ul>
+<li>A special method used to initialize(assign values to) object level variables in object creation process.</li>
+</ul>
+<hr/>
+<h3>What is class level variable?</h3>
+<ul>
+<li>Defining a variable inside the class and outside to all the method of class. We need to access class level variables using identity of class.</li>
+</ul>
+<hr/>
+<h3>What is object level variable?</h3>
+<ul>
+<li>Defining a variable using constructor to store the information inside object is called object level variable. We can access these variables only by using object address.</li>
+</ul>
+<hr/>
+<h3>What is class level method?</h3>
+<ul>
+<li>Defining a method inside the class without ‘self’ argument. It is called common functionality of all the objects in the application.</li>
+</ul>
+<hr/>
+<h3>What is object level method?</h3>
+<ul>
+<li>Defining a method using ‘self’ keyword as first argument is called Object level method. It is called specific functionality of Object in python application.</li>
+</ul>
+<hr/>
+<h3>How to access class level members in python?</h3>
+<ul>
+<li>We can access class level members such as variables and methods using Identity of class.</li>
+</ul>
+<hr/>
+<h3>How to access object level members in python programming?</h3>
+<ul>
+<li>Object level members can be accessed in 2 ways.</li>
+<li>Using ‘self variable’ from object level area.</li>
+<li>Using ‘Object reference variable’ from class level area.</li>
+</ul>
+<hr/>
+<h3>Can we define methods as private in python?</h3>
+<ul>
+<li>Yes, but we can access only with in the class. We can define both class level and object level methods as private.</li>
+</ul>
+<hr/>
+<h3>How to access Parent class members from Child class?</h3>
+<ul>
+<li>By creating object for Child class, we can access Parent class functionality using child object address.</li>
+</ul>
+<hr/>
+<h3>What is the use of compile() function in ‘re’ module?</h3>
+<ul>
+<li>compile() function is used to create pattern object with specified string and it can be used everywhere in regular expressions.</li>
+</ul>
+<hr/>
+<h3>What ‘r’ represents in Regular expression?</h3>
+<ul>
+<li>‘r’ represents raw string in Regular expression specification.</li>
+</ul>
+<hr/>
+<h3>What is a module in Python?</h3>
+<ul>
+<li>The module is a Python source file with .py extensions. The module is either a collection of functions(in procedure-oriented programming) or collection of classes(in Object-oriented programming).</li>
+</ul>
+<hr/>
+<h3>What is the need of the modularity program?</h3>
+<ul>
+<li>Modularity is the concept of dividing the application into parts by which we can develop the code easily by sharing among multiple programmers and Debugging become easy.</li>
+</ul>
+<hr/>
+<h3>How to connect modules in python?</h3>
+<ul>
+<li>‘import’ keyword is used to connect modules in Python programming. We can also use ‘from’ keyword along with ‘import’ to connect the modules and classes.</li>
+</ul>
+<hr/>
+<h3>What is the need of import keyword?</h3>
+<ul>
+<li>We can connect the classes of different modules or Functions in python application.</li>
+</ul>
+<hr/>
+<h3>Describe ‘from’ keyword in python?</h3>
+<ul>
+<li>‘from’ keyword is used to access specific set of classes from a module or specific set of modules from a package in python application.</li>
+</ul>
+<hr/>
+<h3>How to access duplicate classes from different modules?</h3>
+<ul>
+<li>By placing the classes into different packages(folders), we can create duplicate classes in Python programming.</li>
+</ul>
+<hr/>
+<h3>Can we access duplicate functions from different modules?</h3>
+<ul>
+<li>Yes we can access by specifying the function name along with module name.</li>
+</ul>
+<hr/>
+<h3>What is the package in python?</h3>
+<ul>
+<li>A folder or directory which contains set of modules or set of classes.</li>
+</ul>
+<hr/>
+<h3>What is the character system?</h3>
+<ul>
+<li>Representation of all the symbols of a language using constant integer values is called Character system.</li>
+</ul>
+<hr/>
+<h3>Differentiate ASCII and UNICODE?</h3>
+<ul>
+<li>ASCII stands for American Standard Code for Information Interchange. UNICODE is Universal Code. These are examples of Character systems.</li>
+</ul>
+<hr/>
+<h3>What is an immutable object in python?</h3>
+<ul>
+<li>An immutable object state cannot be modified once it has been created.</li>
+</ul>
+<hr/>
+<h3>What are the examples of Immutable objects?</h3>
+<ul>
+<li>Immutable objects are String, Integer, Float, Tuple and so on.</li>
+<li>An only List is a Mutable object in Python programming.</li>
+</ul>
+<hr/>
+<h3>What is the use of chr() function in Python?</h3>
+<ul>
+<li>chr() function is used to convert an integer into character.</li>
+</ul>
+<hr/>
+<h3>How to find the length of String in Python?</h3>
+<ul>
+<li>len() function is used to find the length of the string. It does not belong to the string class.</li>
+</ul>
+<hr/>
+<h3>How to access String elements?</h3>
+<ul>
+<li>We can access the elements of String either by Indexing or Slicing.</li>
+</ul>
+<hr/>
+<h3>How to process sub strings in python?</h3>
+<ul>
+<li>Using the concept of slicing or by using pre-defined functionality of string object.</li>
+</ul>
+<hr/>
+<h3>What is indexing and slicing?</h3>
+<ul>
+<li>Indexing is used to access an element from the collection objects.</li>
+<li>Slicing is used to access a set of elements from the collection object such as String, List, Tuple..</li>
+</ul>
+<hr/>
+<h3>What is the use of isalnum() method of String object?</h3>
+<ul>
+<li>A pre-defined function of String class and is used to check whether the string contains only alphabets and Numbers. It returns a boolean value.</li>
+</ul>
+<hr/>
+<h3>What are the boolean methods of String object?</h3>
+<ul>
+<li>isalpha() , isalnum() , isnumeric() and so on.</li>
+</ul>
+<hr/>
+<h3>What is String pool area?</h3>
+<ul>
+<li>A memory area that stores String(Immutable) objects.</li>
+</ul>
+<hr/>
+<h3>Can we store duplicate objects in String pool area?</h3>
+<ul>
+<li>Duplicate objects are not allowed in String pool area. If we try to create a duplicate object, existing object address will be shared.</li>
+</ul>
+<hr/>
+<h3>What is List in python?</h3>
+<ul>
+<li>An ordered collection object that can able to store the duplicate elements as well as heterogeneous elements.</li>
+</ul>
+<hr/>
+<h3>Differentiate List and Set?</h3>
+<ul>
+<li>The list is ordered whereas Set in un-ordered. List allows duplicates and Set allow unique elements. List allow indexing and Set don’t allow.</li>
+</ul>
+<hr/>
+<h3>What is the main difference between List and Tuple?</h3>
+<ul>
+<li>List is a Mutable object but Tuple is an Immutable object.</li>
+</ul>
+<hr/>
+<h3>How the dictionary store the elements?</h3>
+<ul>
+<li>Dictionary collection object store the element using keys. Keys must be unique. If we try to store the elements using duplicate keys, existing elements will be replaced.</li>
+</ul>
+<hr/>
+<h3>Describe the functions to perform mathematical set operations?</h3>
+<ul>
+<li>union() returns all the elements from specified sets.</li>
+<li>intersection() returns common elements from specified sets.</li>
+<li>symmetric() returns distinct elements from specified sets.</li>
+</ul>
+<hr/>
+<h3>Can we store duplicates inside List?</h3>
+<ul>
+<li>Yes, a List object allows duplicate elements.</li>
+</ul>
+<hr/>
+<h3>Is Tuple an ordered collection object?</h3>
+<ul>
+<li>Yes tuple is an ordered collection object.</li>
+</ul>
+<hr/>
+<h3>Describe pop() function in List?</h3>
+<ul>
+<li>pop() function either deletes the top(last) element of the List or deletes the specified index element from the List.</li>
+</ul>
+<hr/>
+<h3>What is the use of extend() function in List?</h3>
+<ul>
+<li>extend() function is used to add more than one element(another collection) to collection object.</li>
+</ul>
+<hr/>
+<h3>What is the difference between pop() and remove() function?</h3>
+<ul>
+<li>pop() function removes specified index element.</li>
+<li>remove() function removes specified element.</li>
+</ul>
+<hr/>
+<h3>What is the difference between clear() and del in Collections?</h3>
+<ul>
+<li>clear() function is used to delete all the elements from collection. ‘del’ keyword is used to remove the collection object variable completely.</li>
+</ul>
+<hr/>
+<h3>Can we access elements using negative indexing and slicing?</h3>
+<ul>
+<li>Yes allowed, we can use both indexing and negative indexing to access the elements of the collection object.</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+</div>
+</body>
+{% endblock %}

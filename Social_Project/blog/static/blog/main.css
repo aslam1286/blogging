@@ -1,0 +1,95 @@
+
+body{
+    margin-top: 90px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: brown;
+}
+.bg-steel{
+    background-color: green;
+}
+.site-header .navbar-nav .nav-link:hover{
+    color: white;
+    background-color: brown;
+    border-radius: 20px;
+}
+
+#footer{
+    width: 100%;
+    background-color: black;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+}
+.content-section{
+    border: 2px solid red;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+.article-title{
+    color: #444444;
+}
+
+a.article-title:hover{
+    color: #428bca;
+    text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-metadata{
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+    border-bottom: 2px solid green;
+}
+
+.article-metadata a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.account-img{
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+}
+
+.account-heading{
+    font-size: 2.5rem;
+}
+
+ul.list-group{
+    border: 2px solid red;
+    font-size: 15px;
+}
+
+ul.list-group:hover{
+    font-size: 20px;
+}
+
+.myh2{
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+.myclass{
+    background-color: coral;
+    color: white;
+    padding: 10px 0px 10px 30px;
+    margin-bottom: 30px;
+}
+
+
+

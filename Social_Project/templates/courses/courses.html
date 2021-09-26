@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+     Our Courses
+{% endblock %}
+
+{% block body %}
+<h1 style="color:indigo">Welcome On Our Courses</h1>
+<br>
+
+<span class="border border-top-0 border-danger">
+<a style="color:mediumblue; font-size: 130%" class="nav-item font-weight-bold"  href="{% url 'learn_python' %}">Learn Python</a><br>
+<a style="color:mediumblue; font-size: 130%" class="nav-item font-weight-bold"  href="{% url 'learn_django' %}">Learn Django</a><br>
+<a style="color:mediumblue; font-size: 130%" class="nav-item font-weight-bold"  href="{% url 'learn_ml' %}">Learn Machine Learning</a><br>
+<a style="color:mediumblue; font-size: 130%" class="nav-item font-weight-bold"  href="{% url 'learn_ds' %}">Learn Data Science</a>
+</span>
+<marquee style="margin-top: 27px">Subscribe to Our YouTube Channel: for Free of Coast Learning :) <b>TechNoKhan</b></marquee>
+{% endblock body %}
